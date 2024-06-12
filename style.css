@@ -110,14 +110,15 @@ text-align:    center;
 }
 #signup-btn{
 
-    padding: 10px 30px;
+    padding: 18px 25px;
     border: none;
-    background-color: #f09330;
-    border-radius: 5px;
+    background-color: white;
+    border-radius: 10px;
 }
 #signup-btn a{
-    color: white;
+    color: #f09330;
     font-weight: 600;
+    font-size: 16px;
 }
 #hero-img{
     margin-right: 70px;

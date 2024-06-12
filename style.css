@@ -8,8 +8,8 @@ nav{
     display: flex;
     justify-content: space-around;
     /* margin:20px 60px 20px 60px; */
-    padding-top: 10px ;
-    padding-bottom: 10px;
+    padding-top: 1px ;
+    padding-bottom: 1px;
     background-color: white;
     align-items: center;
 }
@@ -17,8 +17,9 @@ nav{
 
 
 #logo{
-    font-size: 18px;
-
+    font-size: 25px;
+    color: #00A9A4;
+margin: 0;
 }
 span{
     color: #f09330;
@@ -35,16 +36,31 @@ span{
     gap: 20px;
 
 }
-
+a{
+    text-decoration: none;
+}
 
 #nav-links li{
     list-style: none;
+    font-size: 18px;
+    
+}
+#nav-links li a{
+    color: black;
+    font-weight: 500;
+}
+#nav-links li a:hover{
+    color: #00A9A4;
+
+}
+#nav-links li a:active{
+    color: #00A9A4;
 }
 .nav-btn {
 	background-color:#00A9A4;
     border:1px solid #00A9A4;
 
-border-radius: 9px;
+border-radius: 5px;
 padding:       10px 40px;
 color:         #ffffff;
 display:       inline-block;
@@ -58,4 +74,58 @@ text-align:    center;
 .nav-btn:active {
 	position:relative;
 	top:1px;
+}
+
+.nav-btn a{
+    color: white;
+}
+
+#hero-section{
+    display: flex;
+    justify-content: space-around;
+    background-color: #00a9a4;
+    height: 87vh;
+}
+
+#hero-text{
+    color: white; 
+    padding-top: 150px;
+    margin-left: 70px;
+}
+#hero-text h1{
+    font-size: 60px;
+    padding: 0;
+ margin: 0;
+}
+#hero-text h4{
+    font-family: sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+#hero-text p{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: rgb(231, 234, 238);
+
+}
+#signup-btn{
+
+    padding: 10px 30px;
+    border: none;
+    background-color: #f09330;
+    border-radius: 5px;
+}
+#signup-btn a{
+    color: white;
+    font-weight: 600;
+}
+#hero-img{
+    margin-right: 70px;
+}
+
+#hero-img img{
+    width: 520px;
+    height: 480px;
+    padding-top: 41px;
+
 }

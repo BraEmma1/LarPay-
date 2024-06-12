@@ -9,7 +9,6 @@ nav{
     justify-content: space-around;
     /* margin:20px 60px 20px 60px; */
     padding-top: 1px ;
-    padding-bottom: 1px;
     background-color: white;
     align-items: center;
 }
@@ -84,7 +83,7 @@ text-align:    center;
     display: flex;
     justify-content: space-around;
     background-color: #00a9a4;
-    height: 87vh;
+    height: 96vh;
 }
 
 #hero-text{
@@ -127,6 +126,51 @@ text-align:    center;
 #hero-img img{
     width: 520px;
     height: 480px;
-    padding-top: 41px;
+    padding-top: 45px;
 
+}
+
+.underheader{
+    background-color: #f2f3f7;
+    display: flex;
+    justify-content: space-around;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-top: -50px;
+    height: 30vh;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+#box-container{
+    margin-left: 90px;
+    margin-right: 90px;
+    display: flex;
+    gap: 40px   ;
+}
+.box{
+display: flex;
+gap: 20px;
+align-items: center;
+
+}
+.box i {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 30px;
+    color: #00A9A4;
+}
+.box h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 0;
+
+}
+.box p{
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top: 0;
+    padding-top: 8px;
 }

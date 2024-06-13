@@ -12,8 +12,20 @@ nav{
     padding-top: 1px ;
     background-color: white;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
 }
 
+/* nav {
+    background-color: #333;
+    padding: 10px 20px;
+   
+    
+  } */
 
 
 #logo{
@@ -270,94 +282,185 @@ align-items: center;
     color: white;
   }
 
-  #how-wework{
+  /* General styling for the section */
+  #how-wework {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    background-color: #f9f9f9; /* Light background color */
   }
 
-.steps {
+  #how-img {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px; /* Add some space between the image and the text */
+    width: 50%;
+    margin-top: 100px;
+  }
+
+  #how-img img {
+    /* max-width: 100%; */
+    /* height: auto; */
+    width: 100%;
+  }
+
+  #how-text {
+    /* flex: 2; Allow the text to take up two parts of the available space */
+    padding-left: 20px; /* Add some space between the text and the image */
+  }
+
+  #steps-top h5 {
+    color:#00A9A4;
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  #steps-top h2 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+
+  #steps-top p {
+    font-size: 1em;
+    color: #666;
+  }
+
+  .steps {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 40px; 
-    position: relative;
+    gap: 20px;
   }
-  /* #how-img{
-    /* width: 50%; */
-   */
- 
+
   .steps-list {
     position: relative;
+    background-color: #fff;
     padding: 20px;
-    background-color: #f9f9f9; /* Light background for contrast */
-    border: 1px solid #ddd; /* Optional border for definition */
-    border-radius: 5px; /* Rounded corners */
-    width: 80%; /* Adjust width as needed */
-    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Styling for the vertical line and arrows */
-  .steps-list::before,
+
+  .steps-list h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+  }
+
+  .steps-list p {
+    font-size: 1em;
+    color: #666;
+    margin: 0;
+  }
+
   .steps-list::after {
     content: '';
     position: absolute;
+    bottom: -20px; /* Position the arrow */
     left: 50%;
     transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #00A9A4;
   }
-  
-  .steps-list::before {
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color:#00A9A4;
-    z-index: -1; /* Place the line behind the step items */
-  }
-  
-  .steps-list::after {
-    top: 100%;
-    width: 20px;
-    height: 20px;
-    border-left: 2px solid  #00A9A4; /* Left part of the arrow */
-    border-bottom: 2px solid #00A9A4; /* Bottom part of the arrow */
-     transform: translateX(-50%) rotate(-45deg); /*Rotate to create downward arrow */
-  }
-  
-  .steps-list:last-child::before {
-    top: 0;
-    bottom: 50%;
-  }
-  
+
   .steps-list:last-child::after {
-    content: none; /* Remove the arrow for the last step */
+    display: none; /* Remove the arrow for the last step */
   }
-  
-  /* Remove the top half of the line for the first step */
-  .steps-list:first-child::before {
-    top: 50%;
-    bottom: 0;
+
+  .steps-list::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background-color: #00A9A4;
   }
-  
-  /* Styling for the text within each step */
-  .steps-list h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #333;
+
+  .steps-list:last-child::before {
+    display: none; /* Remove the line for the last step */
   }
-  
-  .steps-list p {
-    margin: 10px 0 0;
-    color: #666;
-  }
-  
   footer{
     display: flex;
     justify-content: space-around;
     background-color: #00A9A4;
+    /* background: linear-gradient(#fefefe, #0a908d); */
+    /* background: linear-gradient(to bottom, #fefefe, #06aaa7); */
     height: 60vh;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+  }
+  footer li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+  }
+  footer ul{
+    margin: 0;
+    padding: 0;
   }
   #about-company{
     border-radius: 10px;
-    border: #ddd 1px solid;
-    padding: 0;
+    /* border: #ddd 1px solid; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  #about-company h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+  }
+  #about-company p{
+    color: white;
+  }
+
+  .quick-links, .useful-links,.download-app {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    text-align: center; */
+
+  }
+  .quick-links h3,.useful-links h3, .download-app h3{
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .quick-links ul,.useful-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 350;
+  }
+  .quick-links li,.useful-links li{
+    cursor: pointer;
+  }
+  .download-app {
+width: 200px;
+  }
+  .download-app p{
+    margin-top: 0;
+  }
+  .download-image{
+    display: flex;
+    gap: 15px;
+  }
+  .download-image img{
+    width: 50%;
   }

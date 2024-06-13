@@ -1,0 +1,101 @@
+/* General styling for the section */
+#how-wework {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+margin-left: 200px;
+margin-right: 200px;
+    background-color: #f9f9f9; /* Light background color */
+  }
+
+  #how-img {
+    flex: 1; /* Allow the image to take up one part of the available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px; /* Add some space between the image and the text */
+  }
+
+  #how-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: round the corners of the image */
+  }
+
+  #how-text {
+    flex: 2; /* Allow the text to take up two parts of the available space */
+    padding-left: 20px; /* Add some space between the text and the image */
+  }
+
+  #steps-top h5 {
+    color: green;
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  #steps-top h2 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+
+  #steps-top p {
+    font-size: 1em;
+    color: #666;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .steps-list {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .steps-list h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+  }
+
+  .steps-list p {
+    font-size: 1em;
+    color: #666;
+    margin: 0;
+  }
+
+  .steps-list::after {
+    content: '';
+    position: absolute;
+    bottom: -20px; /* Position the arrow */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid green;
+  }
+
+  .steps-list:last-child::after {
+    display: none; /* Remove the arrow for the last step */
+  }
+
+  .steps-list::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background-color:aquamarine;
+  }
+
+  .steps-list:last-child::before {
+    display: none; /* Remove the line for the last step */
+  }

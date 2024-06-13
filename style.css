@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: brown;
+    font-family:Barlow Condensed, sans-serif;
+
 }
 
 nav{
@@ -97,7 +98,7 @@ text-align:    center;
  margin: 0;
 }
 #hero-text h4{
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     font-weight: 500;
     margin: 0;
 }
@@ -131,7 +132,7 @@ text-align:    center;
 }
 
 .underheader{
-    background-color: #f2f3f7;
+    background-color: #f4f4f7;
     display: flex;
     justify-content: space-around;
     border-top-right-radius: 50px;
@@ -174,3 +175,189 @@ align-items: center;
     margin-top: 0;
     padding-top: 8px;
 }
+
+
+#what-wedo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    font-family:   sans-serif;
+}
+.whatwedo-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.whatwedo-text h3{
+    color: #00A9A4;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight:200 ;
+    font-style: normal;}
+.whatwedo-text h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight:700 ;
+    
+}
+
+
+.whatwedo-box{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 90px; */
+    margin-left: 190px;
+    margin-right:170px ;
+
+}
+.wedo-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wedo-box h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #00A9A4;
+    margin-bottom: 0;
+}
+.wedo-box p{
+    text-align: center;
+    font-size: 18px;
+    color: #7F7F7F;
+    padding-top: 20px;
+
+}
+
+.box2{
+    margin-top: 150px;
+}
+.arrow{
+    margin-top: 50px;
+}
+.account-type{
+    display: flex;
+    gap: 40px;
+}
+
+.account-details{
+    display: flex;
+    align-items: center;
+    margin-top: 60px ;
+    border: #7F7F7F 1px solid;
+    border-radius: 8px;
+    padding: 20px 60px 20px 20px;
+    gap: 20px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+.account-details h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #00a9a4;
+}
+
+  .account-details:hover {
+    background-color:#00A9A4;
+    color: white;
+  }
+  .account-details:hover h3 {
+    color: white;
+  }
+
+  #how-wework{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; 
+    position: relative;
+  }
+  /* #how-img{
+    /* width: 50%; */
+   */
+ 
+  .steps-list {
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #ddd; /* Optional border for definition */
+    border-radius: 5px; /* Rounded corners */
+    width: 80%; /* Adjust width as needed */
+    text-align: center;
+  }
+  
+  /* Styling for the vertical line and arrows */
+  .steps-list::before,
+  .steps-list::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .steps-list::before {
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color:#00A9A4;
+    z-index: -1; /* Place the line behind the step items */
+  }
+  
+  .steps-list::after {
+    top: 100%;
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid  #00A9A4; /* Left part of the arrow */
+    border-bottom: 2px solid #00A9A4; /* Bottom part of the arrow */
+     transform: translateX(-50%) rotate(-45deg); /*Rotate to create downward arrow */
+  }
+  
+  .steps-list:last-child::before {
+    top: 0;
+    bottom: 50%;
+  }
+  
+  .steps-list:last-child::after {
+    content: none; /* Remove the arrow for the last step */
+  }
+  
+  /* Remove the top half of the line for the first step */
+  .steps-list:first-child::before {
+    top: 50%;
+    bottom: 0;
+  }
+  
+  /* Styling for the text within each step */
+  .steps-list h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .steps-list p {
+    margin: 10px 0 0;
+    color: #666;
+  }
+  
+  footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #00A9A4;
+    height: 60vh;
+  }
+  #about-company{
+    border-radius: 10px;
+    border: #ddd 1px solid;
+    padding: 0;
+  }

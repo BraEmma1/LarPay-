@@ -33,6 +33,10 @@ nav{
     color: #00A9A4;
 margin: 0;
 }
+
+#logo a {color: #00A9A4;
+
+}
 span{
     color: #f09330;
 }
@@ -97,6 +101,7 @@ text-align:    center;
     justify-content: space-around;
     background-color: #00a9a4;
     height: 96vh;
+    margin-top: 8%;
 }
 
 #hero-text{
@@ -149,10 +154,11 @@ text-align:    center;
     justify-content: space-around;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
-    margin-top: -50px;
+    margin-top: -4%;
     height: 30vh;
     padding-left: 10px;
     padding-right: 10px;
+    z-index: 2000;
 
    
 }

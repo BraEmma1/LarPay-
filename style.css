@@ -153,6 +153,7 @@ text-align:    center;
     height: 30vh;
     padding-left: 10px;
     padding-right: 10px;
+
    
 }
 #box-container{
@@ -282,7 +283,7 @@ align-items: center;
     color: white;
   }
 
-  /* General styling for the section */
+  /* How we works section */
   #how-wework {
     display: flex;
     align-items: flex-start;
@@ -388,6 +389,60 @@ align-items: center;
   .steps-list:last-child::before {
     display: none; /* Remove the line for the last step */
   }
+
+/* End of How We work Section */
+
+  /* About Section */
+  .about-us{
+    display: flex;
+    padding-top: 50px;
+    background-image: url(./images/about-background.png);
+  }
+  .about-img {
+    position: relative; /* Ensure the container is positioned */
+  }
+  
+  .about-img img.aboutimg {
+    position: absolute; /* Position the aboutimg class absolutely */
+    top: 0; /* Align it to the top of the container */
+    left: 0; /* Align it to the left of the container */
+    padding-left: 135px;
+    padding-top: 10px;
+  } 
+  
+  .about-icons{
+ display: flex;
+ /* gap: 30px; */
+ 
+  }
+.icon{
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.icon img{
+
+  width: 50%;
+  height: 50%;
+}
+.icon-text h2, h3 {
+  font-weight:400;
+}
+  /* .aboutimg{
+    display: flex;
+    position: absolute;
+    padding-right: 600px;
+    padding-bottom: 300px;
+  } */
+
+
+/* footer section */
+
+
+
+
   footer{
     display: flex;
     justify-content: space-around;
@@ -429,6 +484,10 @@ align-items: center;
     color: white;
   }
 
+  #socials i{
+    color: white;
+    font-size: 20px;
+  }
   .quick-links, .useful-links,.download-app {
     color: white;
     display: flex;

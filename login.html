@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./loginstyle.css">
 </head>
 <body>
+    <nav>
+        <div id="logo">
+          <a href="./index.html"> <h1>Lar<span>Pay</span></h1></a>
+        </div>
+        <div id="nav-items">
+          <ul id="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="">Download App</a></li>
+            <li><a href="#aboutus">About</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <button class="nav-btn">
+            <a href="./login.html">Login</a>
+            <i class="fa-solid fa-right-to-bracket"></i>
+          </button>
+        </div>
+    </nav>
     <!-- Login container -->
     <div class="login-container">
         <h2>Login</h2>
         <!-- Login form -->
-        <form action="/login" method="post">
+        <form action="/login" method="post" class="fm">
             <!-- Username input field -->
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
@@ -22,6 +41,7 @@
 
             <!-- Submit button -->
             <button type="submit">Login</button>
+            <p class="signin-link">Don't have an account? <a href="./SignUp.html">Sign up</a></p>
         </form>
     </div>
 </body>
